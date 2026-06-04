@@ -1,0 +1,314 @@
+/* Custom Styles for EZ Track */
+
+/* Hero Section Styles */
+.hero-section {
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.9) 0%, rgba(10, 88, 202, 0.9) 100%),
+                url('https://picsum.photos/seed/gps-tracking-fleet-trucks/1920/1080.jpg') center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(13, 110, 253, 0.2), rgba(255, 193, 7, 0.1));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image i {
+    opacity: 0.8;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Service Cards */
+.service-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-color: #0d6efd !important;
+}
+
+.service-card i {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover i {
+    transform: scale(1.1);
+}
+
+/* Contact Page Styles */
+.contact-hero {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    position: relative;
+}
+
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff10" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background-size: cover;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form-card {
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(13, 110, 253, 0.95) !important;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(13, 110, 253, 1) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.nav-link.active {
+    color: #ffc107 !important;
+}
+
+/* Login button styling */
+.navbar-nav .nav-link.btn {
+    padding: 8px 16px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.navbar-nav .nav-link.btn:hover {
+    background: linear-gradient(45deg, #ff8c00, #ffc107) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3) !important;
+}
+
+/* Button Styles */
+.btn {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #ffc107, #ff8c00);
+    border: none;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(45deg, #ff8c00, #ffc107);
+}
+
+/* Card Styles */
+.card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-label {
+    color: #495057;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+    color: #ffffff;
+}
+
+footer h5 {
+    color: #ffc107;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff8c00;
+    text-decoration: underline;
+}
+
+footer .text-muted {
+    color: #adb5bd !important;
+}
+
+.powered-by {
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.powered-by-link {
+    color: #f8f9fa;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.powered-by-link:hover {
+    color: #ffffff;
+    opacity: 0.9;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.powered-by-logo {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.powered-by-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-hero {
+        text-align: center;
+    }
+    
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .service-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0d6efd;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Alert Messages */
+.alert {
+    border-radius: 8px;
+    border: none;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Feature Icons */
+.feature-icon {
+    background: linear-gradient(45deg, #0d6efd, #0a58ca);
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+}
