@@ -98,6 +98,12 @@
     font-weight: 700;
 }
 
+.logo-img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
 .nav-link {
     font-weight: 500;
     transition: all 0.3s ease;
@@ -229,6 +235,16 @@ footer .text-muted {
 .powered-by-text {
     font-size: 0.95rem;
     font-weight: 600;
+}
+
+.footer-logo {
+    padding: 1rem 0;
+}
+
+.footer-logo-img {
+    height: 400px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* Smooth Scrolling */
